@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review" "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview" "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger" "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat" "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport" "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline" "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight" ; /*classes style*/
+	"NULL" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat" [ label = "owl:onClass" ];
+	"NULL" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom" [ label = "owl:onProperty" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review" -> "xsd:float" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger" -> "xsd:integer" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight" -> "xsd:dateTime" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review" -> "xsd:dateTime" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview" -> "xsd:integer" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating" ];
+	"http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight" -> "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport" [ label = "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt" ];
+
+}
