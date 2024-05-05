@@ -1,0 +1,384 @@
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the flights that are operated by an airline, connecting airline companies with the specific flights they manage." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arrivalFor
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arrivalFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes the airport where the flight will land, completing its journey." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> <http://www.w3.org/2000/01/rdf-schema#label> "arrives at" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a passenger to the seat they have booked." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat> <http://www.w3.org/2000/01/rdf-schema#label> "Books Seat" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departureFor> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the airport from which a particular flight departs." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> <http://www.w3.org/2000/01/rdf-schema#label> "departs from" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departureFor
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departureFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isPassengerOn> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a flight to its passengers, representing those who are traveling on a specific flight." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "has passenger" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isOperatedBy
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isOperatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isOperatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isPassengerOn
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isPassengerOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the flights that are operated by an airline, connecting airline companies with the specific flights they manage." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight> <http://www.w3.org/2000/01/rdf-schema#label> "operates flight" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the total duration of the flight, typically expressed in ISO 8601 duration format." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration> <http://www.w3.org/2000/01/rdf-schema#label> "flight duration" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights> <http://www.w3.org/2000/01/rdf-schema#comment> "Counts how many flights the passenger has taken, useful for frequent flyer tracking and benefits." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights> <http://www.w3.org/2000/01/rdf-schema#label> "number of flights" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the overall satisfaction rating given by a passenger in their review, typically on a scale from 1 to 10." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating> <http://www.w3.org/2000/01/rdf-schema#label> "overall rating" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the date on which the review was published by the passenger." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate> <http://www.w3.org/2000/01/rdf-schema#label> "review date" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides a numerical rating for the comfort of the seat as reviewed by the passenger, on a scale typically from 1 to 5." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#label> "seat comfort rating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BaggageService
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BaggageService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BaggageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/GroundService> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BaggageService> <http://www.w3.org/2000/01/rdf-schema#comment> "Services related to handling passenger luggage before and after the flight." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BaggageService> <http://www.w3.org/2000/01/rdf-schema#label> "Baggage Service" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Business
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Business> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of travel offering more amenities and space than economy class." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business Class" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BusinessClassSeat
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BusinessClassSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BusinessClassSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BusinessClassSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "A more spacious and comfortable seat compared to economy, usually with additional services." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BusinessClassSeat> <http://www.w3.org/2000/01/rdf-schema#label> "Business Class Seat" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CheckInService
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CheckInService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CheckInService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/GroundService> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CheckInService> <http://www.w3.org/2000/01/rdf-schema#comment> "Services provided during the check-in process before the flight." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CheckInService> <http://www.w3.org/2000/01/rdf-schema#label> "Check-In Service" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewMember
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewMember> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Person> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewReview
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that assesses the service provided by the flight's crew members." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewReview> <http://www.w3.org/2000/01/rdf-schema#label> "Crew Review" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/DomesticAirline
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/DomesticAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/DomesticAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/DomesticAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "An airline operating within a single country, offering domestic flights." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/DomesticAirline> <http://www.w3.org/2000/01/rdf-schema#label> "Domestic Airline" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Economy
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Economy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Economy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Economy> <http://www.w3.org/2000/01/rdf-schema#label> "Economy Class" .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Economy> <http://www.w3.org/2000/01/rdf-schema#label> "The most common and affordable class of travel on commercial flights." .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/EconomyClassSeat
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/EconomyClassSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/EconomyClassSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/EconomyClassSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "A seat in the economy class, typically offering basic amenities." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/EconomyClassSeat> <http://www.w3.org/2000/01/rdf-schema#label> "Economy Class Seat" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Entertainment
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Entertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InFlightService> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Entertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "Entertainment options available to passengers during the flight such as movies, music, and games." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "In-Flight Entertainment" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClass
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The highest class of travel with the most amenities and services offered." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "First Class" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClassSeat
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClassSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClassSeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClassSeat> <http://www.w3.org/2000/01/rdf-schema#comment> "The most luxurious and spacious seat available, with premium services." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClassSeat> <http://www.w3.org/2000/01/rdf-schema#label> "First Class Seat" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstTimeFlyer
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstTimeFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger who is traveling by air for the first time." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "First Time Flyer" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Every flight must have a specified departure and arrival airport, which are essential for defining the flight's route." .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightAttendant
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightAttendant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewMember> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#comment> "A crew member who ensures the safety and comfort of passengers onboard." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Attendant" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightLeg
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightLeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightLeg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightLeg> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents one segment of a trip to cases where multiple flights are needed to reach a destination." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightLeg> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Leg" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FrequentFlyer
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FrequentFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger who travels frequently, often accruing miles or benefits." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "Frequent Flyer" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/GroundService
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/GroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/GroundService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Service> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InFlightService
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InFlightService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InFlightService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Service> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirline
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "An airline offering international flights between multiple countries." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "International Airline" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirport
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirport> <http://www.w3.org/2000/01/rdf-schema#comment> "An airport that serves international flights, potentially a hub for multiple airlines." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirport> <http://www.w3.org/2000/01/rdf-schema#label> "International Airport" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Itinerary
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Itinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Itinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/LongHaulFlight
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/LongHaulFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/LongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/LongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight that covers long distances, typically international or intercontinental." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/LongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Long Haul Flight" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealReview
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that evaluates the quality and variety of meals provided on the flight." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealReview> <http://www.w3.org/2000/01/rdf-schema#label> "Meal Review" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealService
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InFlightService> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MultiFlightItinerary
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MultiFlightItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MultiFlightItinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Itinerary> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MultiFlightItinerary> <http://www.w3.org/2000/01/rdf-schema#comment> "An itinerary that includes multiple flight legs to reach the destination." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MultiFlightItinerary> <http://www.w3.org/2000/01/rdf-schema#label> "Multi Flight Itinerary" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/OneWayTicket
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/OneWayTicket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/OneWayTicket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Ticket> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/OneWayTicket> <http://www.w3.org/2000/01/rdf-schema#comment> "A ticket that allows travel from an origin to a destination without a return." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/OneWayTicket> <http://www.w3.org/2000/01/rdf-schema#label> "One-Way Ticket" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Person> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Person
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Pilot
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Pilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewMember> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Pilot> <http://www.w3.org/2000/01/rdf-schema#comment> "A trained professional responsible for flying the aircraft." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Pilot> <http://www.w3.org/2000/01/rdf-schema#label> "Pilot" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RegionalAirport
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RegionalAirport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RegionalAirport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RegionalAirport> <http://www.w3.org/2000/01/rdf-schema#comment> "An airport serving regional or domestic flights, with fewer international connections." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RegionalAirport> <http://www.w3.org/2000/01/rdf-schema#label> "Regional Airport" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RoundTripTicket
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RoundTripTicket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RoundTripTicket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Ticket> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RoundTripTicket> <http://www.w3.org/2000/01/rdf-schema#comment> "A ticket that includes both a departure and a return flight." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RoundTripTicket> <http://www.w3.org/2000/01/rdf-schema#label> "Round Trip Ticket" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that focuses specifically on the seating arrangements and comfort." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Review" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Service
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/ShortHaulFlight
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/ShortHaulFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/ShortHaulFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/ShortHaulFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight covering a short distance, typically within the same continent." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/ShortHaulFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Short Haul Flight" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SingleFlightItinerary
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SingleFlightItinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SingleFlightItinerary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Itinerary> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SingleFlightItinerary> <http://www.w3.org/2000/01/rdf-schema#comment> "An itinerary consisting of a single flight from origin to destination." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SingleFlightItinerary> <http://www.w3.org/2000/01/rdf-schema#label> "Single Flight Itinerary" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SpecialMeal
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SpecialMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SpecialMeal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealService> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SpecialMeal> <http://www.w3.org/2000/01/rdf-schema#comment> "A meal option catering to specific dietary requirements or preferences." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SpecialMeal> <http://www.w3.org/2000/01/rdf-schema#label> "Special Meal" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/StandardMeal
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/StandardMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/StandardMeal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealService> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/StandardMeal> <http://www.w3.org/2000/01/rdf-schema#comment> "The regular meal option provided to all passengers." .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/StandardMeal> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Meal" .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Ticket
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Ticket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> .
+# 
+# http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience
+<http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Review" "base:SeatReview" "base:Passenger" "base:Seat" "base:Airport" "base:Airline" "base:Flight" ; /*classes style*/
+	"NULL" -> "base:arriveAt" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Airport" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:departFrom" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Seat" [ label = "owl:onClass" ];
+	"NULL" -> "base:booksSeat" [ label = "owl:onProperty" ];
+	"base:Review" -> "xsd:float" [ label = "base:overallRating" ];
+	"base:Passenger" -> "xsd:integer" [ label = "base:numberOfFlights" ];
+	"base:Passenger" -> "base:Seat" [ label = "base:booksSeat" ];
+	"base:Flight" -> "xsd:dateTime" [ label = "base:flightDuration" ];
+	"base:Flight" -> "base:Airport" [ label = "base:departFrom" ];
+	"base:Review" -> "xsd:dateTime" [ label = "base:reviewDate" ];
+	"base:Flight" -> "base:Passenger" [ label = "base:hasPassenger" ];
+	"base:Airline" -> "base:Flight" [ label = "base:operatesFlight" ];
+	"base:SeatReview" -> "xsd:integer" [ label = "base:seatComfortRating" ];
+	"base:Flight" -> "base:Airport" [ label = "base:arriveAt" ];
+
+}

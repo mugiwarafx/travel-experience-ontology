@@ -1,0 +1,201 @@
+{
+  "@context" : {
+    "isOperatedBy" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isOperatedBy",
+      "@type" : "@id"
+    },
+    "Economy" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Economy"
+    },
+    "Itinerary" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Itinerary"
+    },
+    "isPassengerOn" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/isPassengerOn",
+      "@type" : "@id"
+    },
+    "Entertainment" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Entertainment"
+    },
+    "BaggageService" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BaggageService"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Review"
+    },
+    "departFrom" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departFrom",
+      "@type" : "@id"
+    },
+    "TravelClass" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelClass"
+    },
+    "FrequentFlyer" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FrequentFlyer"
+    },
+    "reviewDate" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/reviewDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "SpecialMeal" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SpecialMeal"
+    },
+    "SeatReview" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SeatReview"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "FlightLeg" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightLeg"
+    },
+    "InternationalAirline" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirline"
+    },
+    "FirstTimeFlyer" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstTimeFlyer"
+    },
+    "CheckInService" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CheckInService"
+    },
+    "FirstClass" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClass"
+    },
+    "StandardMeal" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/StandardMeal"
+    },
+    "numberOfFlights" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/numberOfFlights",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Business"
+    },
+    "Airport" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airport"
+    },
+    "InternationalAirport" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InternationalAirport"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Person"
+    },
+    "operatesFlight" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/operatesFlight",
+      "@type" : "@id"
+    },
+    "overallRating" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/overallRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "CrewReview" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewReview"
+    },
+    "LongHaulFlight" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/LongHaulFlight"
+    },
+    "InFlightService" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/InFlightService"
+    },
+    "Ticket" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Ticket"
+    },
+    "Pilot" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Pilot"
+    },
+    "FlightAttendant" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FlightAttendant"
+    },
+    "FirstClassSeat" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/FirstClassSeat"
+    },
+    "MultiFlightItinerary" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MultiFlightItinerary"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Passenger"
+    },
+    "RegionalAirport" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RegionalAirport"
+    },
+    "MealService" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealService"
+    },
+    "Seat" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Seat"
+    },
+    "BusinessClassSeat" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/BusinessClassSeat"
+    },
+    "booksSeat" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/booksSeat",
+      "@type" : "@id"
+    },
+    "seatComfortRating" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/seatComfortRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EconomyClassSeat" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/EconomyClassSeat"
+    },
+    "OneWayTicket" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/OneWayTicket"
+    },
+    "DomesticAirline" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/DomesticAirline"
+    },
+    "MealReview" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/MealReview"
+    },
+    "TravelExperience" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/TravelExperience"
+    },
+    "RoundTripTicket" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/RoundTripTicket"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Airline"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Flight"
+    },
+    "flightDuration" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/flightDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "CrewMember" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/CrewMember"
+    },
+    "GroundService" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/GroundService"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/Service"
+    },
+    "arriveAt" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arriveAt",
+      "@type" : "@id"
+    },
+    "hasPassenger" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/hasPassenger",
+      "@type" : "@id"
+    },
+    "departureFor" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/departureFor",
+      "@type" : "@id"
+    },
+    "arrivalFor" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/arrivalFor",
+      "@type" : "@id"
+    },
+    "SingleFlightItinerary" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/SingleFlightItinerary"
+    },
+    "ShortHaulFlight" : {
+      "@id" : "http://www.semanticweb.org/superjordi/ontologies/2024/3/travel-experience-ontology/ShortHaulFlight"
+    }
+  }
+}
